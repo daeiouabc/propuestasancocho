@@ -1,0 +1,25 @@
+.logo
+{
+width: 150px;
+}
+
+.primera
+{
+height: 114px;
+line-height: 114px;
+}
+
+nav ul a {
+font-size: 1rem;
+color:#fff;
+}
+nav
+{
+box-shadow: none;
+}
+@media (min-width: 992px) {
+.nav-wrapper
+{
+margin:0 200px;
+}
+}
