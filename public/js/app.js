@@ -1,17 +1,46 @@
+(function(){
 var sancochoApp = angular.module("sancochoApp", ['ngRoute']);
 
 
 sancochoApp.controller('sancochoCtrl',function(){});
 
 sancochoApp.controller('programacionCtrl', function ($scope, $http) {
-  $http.get('/datos/programacion.json').success(function(data) {
-    $scope.programacion = data;
-    console.log($scope.programacion);
+ /* $http.get('/datos/programacion.json').success(function(data) {
+    $scope.tabla = data.eventos;
+   console.log($scope.tabla);
+   
   });
-
-  
+*/
+  $scope.tabla = [
+        {
+            "dia": "13",
+            "hora": "03:00 p.m",
+            "descripcion": "Encuentro en el parque de las palmas chiminangos"
+        },
+        {
+            "dia": "13",
+            "hora": "04:00 p.m",
+            "descripcion": "Salida y recorrido del carnaval Sancocho Fest"
+        },
+        {
+            "dia": "13",
+            "hora": "03:00 p.m",
+            "descripcion": "Llegada del carnaval obra de teatro 'Gallinas ciegas' Gestos Teatro (Tuluá)"
+        },
+        {
+            "dia": "13",
+            "hora": "03:00 p.m",
+            "descripcion": "Don Champignon Concierto Monareta Latin (Tuluá)"
+        },
+        {
+            "dia": "13",
+            "hora": "03:00 p.m",
+            "descripcion": "Presentación cirko pirata (Cali)",
+            "lugar": ""
+        }
+    ];
+    
 });    
-
 
 
 sancochoApp.config(['$routeProvider',
@@ -46,9 +75,8 @@ sancochoApp.config(['$routeProvider',
                         controller: 'sancochoCtrl'
                     }).
                     
-            
-            
                     otherwise({
                         redirectTo: '/'
                     });
         }]);
+})();

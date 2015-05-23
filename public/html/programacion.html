@@ -1,0 +1,24 @@
+<div ng-controller="programacionCtrl">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Hora</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+    </table>
+    
+    <tbody>
+    <tr ng-repeat="x in tabla">
+        <td>{{ x.dia }}</td>
+       <td>{{ x.hora}}</td>
+        <td>{{x.descripcion}}</td>
+        {{x}}
+    </tr>
+    
+    </tbody>
+    
+    
+</div>
