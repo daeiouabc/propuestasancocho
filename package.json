@@ -2,14 +2,14 @@
   "name": "sancocho",
   "version": "1.0.0",
   "description": "Sitio web prototipo para reemplazar el sitio actual",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.12.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
