@@ -1,0 +1,29 @@
+{
+  "name": "sancocho",
+  "version": "1.0.0",
+  "description": "Sitio web prototipo para reemplazar el sitio actual",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davimba/propuestasancocho.git"
+  },
+  "keywords": [
+    "sancocho",
+    "festival",
+    "prototipo"
+  ],
+  "author": "None",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davimba/propuestasancocho/issues"
+  },
+  "homepage": "https://github.com/davimba/propuestasancocho"
+}
