@@ -17,6 +17,11 @@ nav
 {
 box-shadow: none;
 }
+.btn-floating
+{
+  background-color:#ffb74d;
+}
+
 @media (min-width: 992px) {
 .nav-wrapper
 {

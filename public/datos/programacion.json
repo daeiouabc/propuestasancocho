@@ -1,5 +1,5 @@
 {
-    "eventos": [
+    "carnaval": [
         {
             "dia": "13",
             "hora": "03:00 p.m",
@@ -18,13 +18,40 @@
         {
             "dia": "13",
             "hora": "03:00 p.m",
-            "descripcion": "Don Champignon Concierto Monareta Latin (Tuluá)"
+            "descripcion": "Presentación cirko pirata (Cali)"
         },
         {
             "dia": "13",
-            "hora": "03:00 p.m",
-            "descripcion": "Presentación cirko pirata (Cali)",
+            "hora": "08:20 p.m",
+            "descripcion": "Don Champignon Concierto Monareta Latin (Tuluá)",
             "lugar": ""
+        }
+    ],
+
+    "eventos": [
+        {
+            "dia": "14",
+            "lugar": "tarima principal",
+            "hora": "04:00 pm",
+            "descripcion": "Banda de Bugalagrande"
+        },
+        {
+            "dia": "14",
+            "lugar": "tarima Junior",
+            "hora": "04:40 pm",
+            "descripcion": "Jotadufourd Guitarrista argentino"
+        },
+        {
+            "dia": "14",
+            "lugar": "tarima Principal",
+            "hora": "06:40 pm",
+            "descripcion": "Ryan Tennis and the clubhouse Band"
+        },
+        {
+            "dia": "14",
+            "lugar": "tarima Principal",
+            "hora": "76:40 pm",
+            "descripcion": "De tierra caliente"
         }
     ]
 }

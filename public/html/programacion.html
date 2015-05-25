@@ -1,24 +1,53 @@
 <div ng-controller="programacionCtrl">
+  <div class="row">
+    <div class="offset-s1 col s11">
+        <div class="card">
+          <div class="card-content">
+            <table>
+                <thead>
+                    <tr>
+                      <th>Dia</th>
+                      <th>Hora</th>
+                      <th>Descripcion</th>
+                      <th>Lugar</th>
+                    </tr>
+                </thead>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Dia</th>
-                <th>Hora</th>
-                <th>Descripcion</th>
-            </tr>
-        </thead>
-    </table>
-    
-    <tbody>
-    <tr ng-repeat="x in tabla">
-        <td>{{ x.dia }}</td>
-       <td>{{ x.hora}}</td>
-        <td>{{x.descripcion}}</td>
-        {{x}}
-    </tr>
-    
-    </tbody>
-    
-    
+                <tbody>
+                  <tr ng-repeat="evento in todo.eventos">
+                        <td>{{ evento.dia }}</td>
+                        <td>{{evento.hora}}</td>
+                        <td>{{evento.descripcion}}</td>
+                        <td>{{evento.lugar}}</td>
+                  </tr>
+
+                </tbody>
+            </table>
+          </br>
+            <table>
+              <thead>
+                <tr>
+                  <th>Dia</th>
+                  <th>Hora</th>
+                  <th>Descripcion</th>
+
+                </tr>
+              </thead>
+
+              <tbody>
+
+                    <tr ng-repeat="evento in todo.carnaval">
+                      <td>{{evento.dia}}</td>
+                      <td>{{evento.hora}}</td>
+                      <td>{{evento.descripcion}}</td>
+
+                    </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+    </div>
+  </div>
+</div>
 </div>

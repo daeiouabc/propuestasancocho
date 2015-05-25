@@ -5,42 +5,11 @@ var sancochoApp = angular.module("sancochoApp", ['ngRoute']);
 sancochoApp.controller('sancochoCtrl',function(){});
 
 sancochoApp.controller('programacionCtrl', function ($scope, $http) {
- /* $http.get('/datos/programacion.json').success(function(data) {
-    $scope.tabla = data.eventos;
-   console.log($scope.tabla);
-   
+  $http.get('/datos/programacion.json').success(function(data) {
+    $scope.todo = data;
+    console.log($scope.todo);
   });
-*/
-  $scope.tabla = [
-        {
-            "dia": "13",
-            "hora": "03:00 p.m",
-            "descripcion": "Encuentro en el parque de las palmas chiminangos"
-        },
-        {
-            "dia": "13",
-            "hora": "04:00 p.m",
-            "descripcion": "Salida y recorrido del carnaval Sancocho Fest"
-        },
-        {
-            "dia": "13",
-            "hora": "03:00 p.m",
-            "descripcion": "Llegada del carnaval obra de teatro 'Gallinas ciegas' Gestos Teatro (Tuluá)"
-        },
-        {
-            "dia": "13",
-            "hora": "03:00 p.m",
-            "descripcion": "Don Champignon Concierto Monareta Latin (Tuluá)"
-        },
-        {
-            "dia": "13",
-            "hora": "03:00 p.m",
-            "descripcion": "Presentación cirko pirata (Cali)",
-            "lugar": ""
-        }
-    ];
-    
-});    
+});
 
 
 sancochoApp.config(['$routeProvider',
@@ -70,13 +39,17 @@ sancochoApp.config(['$routeProvider',
                         templateUrl: '/html/contacto.html',
                         controller: 'sancochoCtrl'
                     }).
-                    when('/bienvenidos/', {
+                    when('/', {
                         templateUrl: '/html/bienvenidos.html',
                         controller: 'sancochoCtrl'
                     }).
-                    
+                      when('/bienvenidos', {
+                          templateUrl: '/html/bienvenidos.html',
+                          controller: 'sancochoCtrl'
+                      }).
+
                     otherwise({
-                        redirectTo: '/'
+                        redirectTo: '/error'
                     });
         }]);
 })();
