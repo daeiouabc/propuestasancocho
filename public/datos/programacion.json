@@ -1,34 +1,40 @@
 {
-    "carnaval": [
+    "dia1": [
+
         {
             "dia": "13",
             "hora": "03:00 p.m",
-            "descripcion": "Encuentro en el parque de las palmas chiminangos"
+            "descripcion": "Encuentro en el parque de las palmas chiminangos",
+            "lugar": "tarima principal"
         },
         {
             "dia": "13",
             "hora": "04:00 p.m",
-            "descripcion": "Salida y recorrido del carnaval Sancocho Fest"
+            "descripcion": "Salida y recorrido del carnaval Sancocho Fest",
+            "lugar": "tarima junior"
         },
         {
             "dia": "13",
             "hora": "03:00 p.m",
-            "descripcion": "Llegada del carnaval obra de teatro 'Gallinas ciegas' Gestos Teatro (Tuluá)"
+            "descripcion": "Llegada del carnaval obra de teatro 'Gallinas ciegas' Gestos Teatro (Tuluá)",
+            "lugar": "Tulua"
         },
         {
             "dia": "13",
             "hora": "03:00 p.m",
-            "descripcion": "Presentación cirko pirata (Cali)"
+            "descripcion": "Presentación cirko pirata (Cali)",
+            "lugar": "tarima principal"
         },
         {
             "dia": "13",
             "hora": "08:20 p.m",
             "descripcion": "Don Champignon Concierto Monareta Latin (Tuluá)",
-            "lugar": ""
+            "lugar": "tarima principal"
         }
     ],
 
-    "eventos": [
+    "dia2": [
+
         {
             "dia": "14",
             "lugar": "tarima principal",

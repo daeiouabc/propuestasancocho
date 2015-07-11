@@ -1,118 +1,97 @@
 <html ng-app="sancochoApp">
 
+    <title id="top">Sancocho Fest</title>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
-        <!--<link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/app.css">   -->
-          <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+        <link rel="stylesheet" href="materialize/css/materialize.min.css">
         <link rel="stylesheet" href="css/app.css">
-          <!-- Compiled and minified JavaScript -->
 
-         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
         <script src="js/app.js"></script>
-
     </head>
 
-<body class="blue">
+    <body class="grey lighten-2">
+        <header>
+            <div class="navbar-fixed">
+                <nav class="z-depth-2 blue">
+                    <div class="nav-wrapper" >
 
-     <nav class="transparent primera">
-        <div class="nav-wrapper" >
-         <a href="#/bienvenidos/" class="brand-logo center"><img class="responsive-img logo" src="img/fest2015.png"></a>
-         </div>
-    </nav>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                        <a href="#/" class="brand-logo center"><img class="responsive-img logo" src="img/fest2015.png"></a>
 
+                        <ul id="nav-mobile" class="hide-on-med-and-down">
 
-    <nav class="transparent primera" style="margin-bottom:0px;">
-        <div class="nav-wrapper" >
+                            <div class="left">
+                                <li><a href="#/">Bienvenidos</a></li>
+                                <li><a href="#/programacion/">Programacion</a></li>
+                                <li><a href="#/pasados/">Fest Pasados</a></li>
+                            </div>
 
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                            <div class="right">
+                                <li><a href="#/organiza/">Organiza</a></li>
+                                <li><a href="#/patrocinadores/">Patrocinadores</a></li>
+                                <li><a href="#/contacto/">Contacto</a></li>
+                            </div>
+                        </ul>
 
-        <ul id="nav-mobile" class="center hide-on-med-and-down" style="margin:0 auto;">
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="#/">BIENVENIDOS</a></li>
+                            <li><a href="#/programacion/">PROGRAMACION</a></li>
+                            <li><a href="#/pasados/">SANCOCHOS PASADOS</a></li>
+                            <li><a href="#/organiza/">ORGANIZA</a></li>
+                            <li><a href="#/patrocinadores/">PATROCINADORES</a></li>
+                            <li><a href="#/contacto/">CONTACTO</a></li>
+                        </ul>
 
-            <li><a href="#/bienvenidos/">BIENVENIDOS</a></li>
-            <li><a href="#/fest/">FEST 2015 </a></li>
-            <li><a href="#/programacion/">PROGRAMACION</a></li>
-            <li><a href="#/pasados/">SANCOCHOS PASADOS</a></li>
-            <li><a href="#/organiza/">ORGANIZA</a></li>
-            <li><a href="#/patrocinadores/">PATROCINADORES</a></li>
-            <li><a href="#/contacto/">CONTACTO</a></li>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-         <li><a href="#/bienvenidos/">BIENVENIDOS</a></li>
-            <li><a href="#/fest/">FEST 2015 </a></li>
-            <li><a href="#/programacion/">PROGRAMACION</a></li>
-            <li><a href="#/pasados/">SANCOCHOS PASADOS</a></li>
-            <li><a href="#/organiza/">ORGANIZA</a></li>
-            <li><a href="#/patrocinadores/">PATROCINADORES</a></li>
-            <li><a href="#/contacto/">CONTACTO</a></li>
-            </ul>
-
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div  class="offset-2 col s12" ng-view>
-                <p>
+        <main>
+          <div ng-view>
 
             </div>
-        </div>
-    </div>
+        </main>
 
+        <footer class="pie z-depth-2 light-green darken-2 page-footer">
+                <div class="container">
+                    <div class=" social row">
 
-      <div class="fixed-action-btn" style="bottom: 10%; right: 24px;">
-    <a class="btn-floating btn-large">
-      <i class="large mdi-social-share"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating blue"><img style="margin-top:10px;" src="img/fb.png"/></a></li>
-      <li><a class="btn-floating blue lighten-2 "><img style="margin-top:10px;"src="img/tw.png"/></a></li>
-      <li><a class="btn-floating red"><img style="margin-top:5px;" src="img/yt.png"/></a></li>
-    </ul>
-  </div>
+                     <div class="left">
+                        <a class="grey-text text-lighten-4 " href="#!">Sobre nosotros </a>
+                        <a href="" class="grey-text text-lighten-4 ">Patrocinadores </a>
+                        <a href="" class="grey-text text-lighten-4 ">Blog </a>
+                        </div>
 
-       <footer class="light-green darken-2 page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-
-                <p class="grey-text text-lighten-4">Sancocho Fest surge como un llamado a la
-tolerancia y al respeto en nuestra ciudad, utilizando el arte
-como herramienta de transformación</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-
-                <ul>
-
-            <li><a class="grey-text text-lighten-3" href="#/bienvenidos/">BIENVENIDOS</a></li>
-            <li><a class="grey-text text-lighten-3" href="#/fest/">FEST 2015 </a></li>
-            <li><a class="grey-text text-lighten-3" href="#/programacion/">PROGRAMACION</a></li>
-            <li><a class="grey-text text-lighten-3" href="#/pasados/">SANCOCHOS PASADOS</a></li>
-            <li><a class="grey-text text-lighten-3" href="#/organiza/">ORGANIZA</a></li>
-            <li><a class="grey-text text-lighten-3" href="#/patrocinadores/">PATROCINADORES</a></li>
-            <li><a class="grey-text text-lighten-3" href="#/contacto/">CONTACTO</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2015
-
-          </div>
+                    <div class="right">
+                        <a class="" href="https://facebook.com "><img  src="img/fb.png"/></a>
+                        <a class="" href="https://twitter.com"><img  src="img/tw.png"/></a>
+                        <a class="" href="https://youtube.com"><img  src="img/yt.png"/></a>
+                        <a class="" href="https://instagram.com"><img  src="img/ins.png"/></a>
+                    </div>
+                    </div>
+               </div>
         </footer>
-
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a href="#top"class="btn-floating btn-large orange accent-3">
+            <img class="up" src="img/up.png">
+          </a>
+        </div>
     </body>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
     <script>
-    $( document ).ready(function(){$(".button-collapse").sideNav();})
+     $(document).ready(function() {
+        $('.button-collapse').sideNav();
+
+    });
     </script>
+
 
 
 </html>

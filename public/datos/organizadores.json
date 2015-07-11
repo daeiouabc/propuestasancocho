@@ -1,0 +1,35 @@
+[
+    {
+      "nombre":"Fulano de Tal",
+      "fb":"https://www.facebook.com/ft",
+      "foto":"http://placehold.it/500x500"
+    },
+    {
+      "nombre":"Pepita Perez",
+      "fb":"https://www.facebook.com/p1",
+      "foto":"http://placehold.it/500x500"
+    },
+    {
+      "nombre":"Pepita Perez",
+      "fb":"https://www.facebook.com/p2",
+      "foto":"http://placehold.it/500x500"
+    },
+    {
+      "nombre":"Sultano Francisco",
+      "fb":"https://www.facebook.com/sf",
+      "foto":"http://placehold.it/500x500"
+    },
+    {
+      "nombre":"Sultano Francisco",
+      "fb":"https://www.facebook.com/sf",
+      "foto":"http://placehold.it/500x500"
+    }
+    ,
+    {
+      "nombre":"Sultano Francisco",
+      "fb":"https://www.facebook.com/sf",
+      "foto":"http://placehold.it/500x500"
+    }
+
+
+  ]

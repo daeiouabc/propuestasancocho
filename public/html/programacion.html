@@ -1,9 +1,12 @@
-<div ng-controller="programacionCtrl">
-  <div class="row">
+  <div ng-controller="programacionCtrl">
+  <div class="container">
+    <div class="row content">
+
     <div class="offset-s1 col s11">
+        <h3 class="center gray-text">Programacion</h3>
         <div class="card">
           <div class="card-content">
-            <table>
+            <table class="striped ">
                 <thead>
                     <tr>
                       <th>Dia</th>
@@ -14,34 +17,25 @@
                 </thead>
 
                 <tbody>
-                  <tr ng-repeat="evento in todo.eventos">
+                  <tr ng-repeat="evento in todo.dia1">
                         <td>{{ evento.dia }}</td>
                         <td>{{evento.hora}}</td>
                         <td>{{evento.descripcion}}</td>
                         <td>{{evento.lugar}}</td>
                   </tr>
 
+                  <tr ng-repeat="evento in todo.dia2">
+                  <td>{{evento.dia}}</td>
+                  <td>{{evento.hora}}</td>
+                  <td>{{evento.descripcion}}</td>
+                  <td>{{evento.lugar}}</td>
+
+                  </tr>
                 </tbody>
             </table>
           </br>
-            <table>
-              <thead>
-                <tr>
-                  <th>Dia</th>
-                  <th>Hora</th>
-                  <th>Descripcion</th>
 
-                </tr>
-              </thead>
 
-              <tbody>
-
-                    <tr ng-repeat="evento in todo.carnaval">
-                      <td>{{evento.dia}}</td>
-                      <td>{{evento.hora}}</td>
-                      <td>{{evento.descripcion}}</td>
-
-                    </tr>
 
 
               </tbody>
@@ -50,4 +44,6 @@
     </div>
   </div>
 </div>
+</div>
+
 </div>

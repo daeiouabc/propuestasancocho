@@ -1,1 +1,18 @@
-Patrocinadores
+<div ng-controller="patrocinadoresCtrl" >
+  <div class="container">
+        <div class="row content">
+          <h3 class="center gray-text">Patrocinadores</h3>
+          <div class="col m3 l3" ng-repeat="patrocinador in todo" materialbox>
+              <div class="container-patrocinio">
+                <img class=" responsive-img materialboxed" data-caption={{patrocinador.nombre}} src={{patrocinador.img}}>
+            </div>
+          </div>
+
+      </div>
+  </div>
+  <script>
+    $('.materialboxed').materialbox();
+
+  </script>
+
+</div>

@@ -1,20 +1,31 @@
-<div class="row">
-    <div class="offset-s1 col s10">
-        <div class="card">
-            <div class="card-content ">
-    Está conformado por un grupo de artistas que se han encargado de trabajar hombro a hombro con el objetivo de fomentar el arte como herramienta educativa en el proceso cultural de nuestra comunidad, generando dentro de nuestro alcance un espacio de arte y diálogo.
-                    <div class="row">
-                        <div class="col m4 s1">
-                            <img src="http://placehold.it/200x200" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col m4 s1">
-                            <img src="http://placehold.it/200x200" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col m4 s1">
-                            <img src="http://placehold.it/200x200" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                  </div>
+<div ng-controller="organizadoresCtrl">
+  <div class="container">
+      <div class="row content">
+        <h3 class="center gray-text">Organiza</h3>
+          <p class="flow-text">
+          Está conformado por un grupo de artistas que se han encargado de trabajar hombro a hombro con el objetivo de fomentar el arte como herramienta educativa en el proceso cultural de nuestra comunidad, generando dentro de nuestro alcance un espacio de arte y diálogo.
+          </p>
+
+
+          <div class=" col m3 l3" ng-repeat="organizador in todo">
+
+            <div class="card small">
+              <div class="card-image ">
+                <img class="activator" src={{organizador.foto}}>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"> {{organizador.nombre}} </span>
+              
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{organizador.nombre}}</i></span>
+                <p><a href={{organizador.fb}}>{{organizador.fb}} </a></p>
+                <p>Mas informacion aqui</p>
+              </div>
             </div>
-        </div>
+          </div>
+
+
     </div>
+  </div>
 </div>

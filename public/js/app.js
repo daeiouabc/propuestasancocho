@@ -11,6 +11,33 @@ sancochoApp.controller('programacionCtrl', function ($scope, $http) {
   });
 });
 
+sancochoApp.controller('organizadoresCtrl', function ($scope, $http) {
+  $http.get('/datos/organizadores.json').success(function(data) {
+    $scope.todo = data;
+    console.log($scope.todo);
+  });
+});
+
+sancochoApp.controller('patrocinadoresCtrl', function ($scope, $http) {
+  $http.get('/datos/patrocinadores.json').success(function(data) {
+    $scope.todo = data;
+    console.log($scope.todo);
+  });
+});
+
+
+sancochoApp.directive('materialbox', function() {
+    return {
+        // Restrict it to be an attribute in this case
+        restrict: 'A',
+        // responsible for registering DOM listeners as well as updating the DOM
+        link: function() {
+            $('.materialboxed').materialbox();
+        }
+    };
+});
+
+
 
 sancochoApp.config(['$routeProvider',
         function($routeProvider) {
@@ -29,11 +56,11 @@ sancochoApp.config(['$routeProvider',
                     }).
                     when('/organiza/', {
                         templateUrl: '/html/organizadores.html',
-                        controller: 'sancochoCtrl'
+                        controller: 'organizadoresCtrl'
                     }).
                     when('/patrocinadores/', {
                         templateUrl: '/html/patrocinadores.html',
-                        controller: 'sancochoCtrl'
+                        controller: 'patrocinadoresCtrl'
                     }).
                     when('/contacto/', {
                         templateUrl: '/html/contacto.html',
@@ -43,10 +70,7 @@ sancochoApp.config(['$routeProvider',
                         templateUrl: '/html/bienvenidos.html',
                         controller: 'sancochoCtrl'
                     }).
-                      when('/bienvenidos', {
-                          templateUrl: '/html/bienvenidos.html',
-                          controller: 'sancochoCtrl'
-                      }).
+
 
                     otherwise({
                         redirectTo: '/error'
