@@ -76,7 +76,7 @@
                     </div>
                </div>
         </footer>
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <div class="fixed-action-btn" style="display:none;bottom: 45px; right: 24px;">
           <a href="#top"class="btn-floating btn-large orange accent-3">
             <img class="up" src="img/up.png">
           </a>
@@ -89,7 +89,22 @@
      $(document).ready(function() {
         $('.button-collapse').sideNav();
 
-    });
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+          $('.fixed-action-btn').fadeIn();
+        } else {
+          $('.fixed-action-btn').fadeOut();
+        }
+      });
+
+      //Click event to scroll to top
+      $('.fixed-action-btn').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+      });
+
+      });
     </script>
 
 

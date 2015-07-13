@@ -103,3 +103,10 @@ line-height: 123px;
 {
   margin-top: 1.1em;
 }
+
+element.style {
+}
+.slider .indicators .indicator-item {
+
+background-color: #D74848;
+}
